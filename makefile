@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall
 AR = ar
 
-all: mains maindloop maindrec
+all: mains maindloop maindrec loops
 
 loops: libclassloops.a
 
