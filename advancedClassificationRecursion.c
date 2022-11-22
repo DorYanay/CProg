@@ -51,7 +51,6 @@ int recPalindrome(int num1, int num2)
     {
         return num2;
     }
-    int sum = 0;
     num2 = (num2 * 10) + (num1 % 10);
     return recPalindrome(num1 / 10, num2);
 }
