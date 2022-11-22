@@ -26,15 +26,15 @@ advancedClassificationRecursion.o: advancedClassificationRecursion.c NumClass.h
 recursived: libclassrec.so
 
 libclassrec.so: basicClassification.o advancedClassificationRecursion.o
-			$(CC) -shared -fPIC -o libclassrec.so basicClassification.o advancedClassificationRecursion.o
+			$(CC) -shared -fPIC -o libclassrec.so basicClassification.o advancedClassificationRecursion.o -lm
 
 loopd: libclassloops.so
 
 libclassloops.so: basicClassification.o advancedClassificationLoop.o
-			$(CC) -shared -fPIC -o libclassloops.so basicClassification.o advancedClassificationLoop.o
+			$(CC) -shared -fPIC -o libclassloops.so basicClassification.o advancedClassificationLoop.o -lm
 
 mains: main.o libclassrec.a
-			$(CC) $(CFLAGS) main.o libclassrec.a -o mains
+			$(CC) $(CFLAGS) main.o libclassrec.a -o mains -lm
 
 main.o: main.c NumClass.h
 			$(CC) $(CFLAGS) -c main.c

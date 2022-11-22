@@ -38,7 +38,7 @@ int isPalindrome(int n)
         reverse = (reverse * 10) + (num % 10);
         num = num / 10;
     }
-    if (reverse = n)
+    if (reverse == n)
     {
         return 1;
     }
