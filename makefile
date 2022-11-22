@@ -40,11 +40,11 @@ main.o: main.c NumClass.h
 			$(CC) $(CFLAGS) -c main.c
 
 maindloop: main.o libclassloops.so
-			$(CC) $(CFLAGS) main.o libclassloops.so -o maindloop
+			$(CC) $(CFLAGS) main.o ./libclassloops.so -o maindloop
 
 
 maindrec: main.o libclassrec.so
-			$(CC) $(CFLAGS) main.o libclassrec.so -o maindrec
+			$(CC) $(CFLAGS) main.o ./libclassrec.so -o maindrec
 
 
 clean: 
