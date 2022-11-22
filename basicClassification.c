@@ -40,9 +40,9 @@ int isPrime(int n)
     {
         return 0;
     }
-    for (int i = 2; i < sqrt(num); i++)
+    for (int i = 2; i <= sqrt(num); i++)
     {
-        if (n % i == 0)
+        if (num % i == 0)
         {
             return 0;
         }

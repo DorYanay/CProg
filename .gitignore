@@ -1,0 +1,16 @@
+check_submition.py
+inputs/
+outputs/
+firstassignment.txt
+mains
+main.o
+maindloop
+maindrec
+libclassrec.a
+advancedClassificationRecursion.o
+advancedClassificationLoop.o
+basicClassification.o
+libclassrec.so
+libclassloops.so
+libclassloops.a
+outputcheck.txt
