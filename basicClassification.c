@@ -42,7 +42,7 @@ int isPrime(int n)
     }
     for (int i = 2; i < sqrt(num); i++)
     {
-        if (n % 2 == 0)
+        if (n % i == 0)
         {
             return 0;
         }
