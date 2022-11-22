@@ -40,7 +40,7 @@ main.o: main.c NumClass.h
 			$(CC) $(CFLAGS) -c main.c
 
 maindloop: main.o libclassloops.so
-			$(CC) $(CFLAGS) main.o libclassloops.so -o mainsdloop
+			$(CC) $(CFLAGS) main.o libclassloops.so -o maindloop
 
 
 maindrec: main.o libclassrec.so
