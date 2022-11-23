@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -g
 AR = ar
 
 all: mains maindloop maindrec loops
