@@ -3,7 +3,7 @@ CFLAGS = -Wall -g
 AR = ar
 
 all: mains maindloop maindrec loops
-
+#Libraries
 loops: libclassloops.a
 
 libclassloops.a: basicClassification.o advancedClassificationLoop.o
@@ -32,7 +32,7 @@ loopd: libclassloops.so
 
 libclassloops.so: basicClassification.o advancedClassificationLoop.o
 			$(CC) -shared -fPIC -o libclassloops.so basicClassification.o advancedClassificationLoop.o -lm
-
+#Main
 mains: main.o libclassrec.a
 			$(CC) $(CFLAGS) main.o libclassrec.a -o mains -lm
 
@@ -46,8 +46,8 @@ maindloop: main.o libclassloops.so
 maindrec: main.o libclassrec.so
 			$(CC) $(CFLAGS) main.o ./libclassrec.so -o maindrec
 
-
+#Clean
 clean: 
 			rm -f mains maindloop maindrec *.o *.a *.so	libclassloops.* libclassrec.*
-
+#PHONY
 .PHONY: clean loops recursives recursived loopd 					

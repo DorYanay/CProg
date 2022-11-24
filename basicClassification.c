@@ -2,6 +2,7 @@
 #include <math.h>
 #include "NumClass.h"
 
+// An helper function that factorials a number. (helper for isStrong function)
 int fact(int n)
 {
     int fn = 1;
@@ -11,6 +12,7 @@ int fact(int n)
     }
     return fn;
 }
+// Function to find if the given number is a Strong number.
 int isStrong(int n)
 {
     int num = n;
@@ -33,6 +35,7 @@ int isStrong(int n)
         return 0;
     }
 }
+// Function to find if the given Integer is prime. (In this Assignment the number 1 is a prime).
 int isPrime(int n)
 {
     int num = n;

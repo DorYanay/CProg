@@ -2,6 +2,7 @@
 #include <math.h>
 #include "NumClass.h"
 
+// Function to check if the given Integer is Armstrong (Recursively)
 int isArmstrong(int n)
 {
     int length = 0;
@@ -31,7 +32,7 @@ int recArmstrong(int number, int length)
     }
     return sum;
 }
-
+// Function to check if the given Integer is Palindrome (Recursively)
 int isPalindrome(int n)
 {
     int sum = 0;
